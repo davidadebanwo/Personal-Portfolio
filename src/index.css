@@ -1,13 +1,44 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Manrope:wght@300;400;500;600&&family=Mynerve&family=Oswald:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+:root{
+  --color-bg: #0e0b0b;
+  --color-bg1: #000000de;
+  --color-text: #276bf3;
+  --color-text-light: #6796f3;
+  --color-primary: #f7e1d6;
+  --color-light:rgb(98, 224, 218);
+  --color-button-color: rgb(218, 74, 55);
+  --color-button-hover:rgb(245, 42, 35);
+  --border: 1px solid rgba(255, 255, 255, 0.384);
+}
+body {
+  background-color: #000000;
+  background-image: url('./assets/texture.png');
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.slashline{
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.line{
+  height: 2px;
+  width: 50px;
+  background-color: var(--color-text);
+}
+.slash{
+  height: 2px;
+  width: 10px;
+  background-color: var(--color-text);
+  transform: rotate(-40deg);
+
 }

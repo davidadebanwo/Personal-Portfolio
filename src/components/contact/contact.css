@@ -1,0 +1,91 @@
+.component__contact{
+    padding-top: 50px;
+}
+.component__contact h1{
+    color: var(--color-light);
+    font-size: 30px;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form input{
+    height: 35px;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    color: white;
+    font-size: 20px;
+    background-color:unset;
+    padding: 5px 0 5px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+form textarea{
+    height: 200px;
+    width: 50%;
+    margin: auto;
+    resize: none;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px 0 0 10px; 
+    font-family: 'Poppins', sans-serif;
+}
+form button{
+    width: 100px;
+    font-size: 25px;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-button-color);
+    color:white  ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+form button:hover{
+    background-color: var(--color-button-hover);
+}
+
+@media screen and (max-width:800px) {
+    .component__contact h1{
+        font-size: 25px;
+    }
+    form input{
+        height: 30px;
+        width: 70%;
+        font-size: 18px;
+    }
+    form textarea{
+        height: 150px;
+        width: 70%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .component__contact h1{
+        font-size: 24px;
+    }
+    form input{
+        height: 30px;
+        width: 70%;
+        font-size: 16px;
+    }
+    form textarea{
+        height: 150px;
+        width: 70%;
+        font-size: 16px;
+    }
+    form button{
+        font-size: 20px;
+    }
+}
