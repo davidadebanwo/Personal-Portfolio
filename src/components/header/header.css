@@ -19,10 +19,10 @@
 }
 .component__header-intro-about h2 span{
     font-size: 50px;
-    color: white;
+    color: var(--color-primary);
 }
 .component__header-intro-about h3{
-    color: var(--color-text-light);
+    color: var(--color-light);
     font-size: 50px;
     margin-bottom: 10px;
     font-family: 'Indie Flower', cursive;
@@ -34,13 +34,13 @@
 }
 
 .component__header-intro-about p{
-    color: var(--color-primary);
+    color: var(--color-primary2);
     font-size: 18px;
 }
 
 .component__header-intro-socials{
     font-size: 30px;
-    color: var(--color-light);
+    color: var(--color-text-light);
     margin-top: 20px;
     display: flex;
     gap: 20px;
@@ -51,7 +51,7 @@
 }
 
 .components__header-intro-social-each:hover{
-    color:var(--color-text-light);
+    color:var(--color-primary);
 }
 
 .component__header-pic{

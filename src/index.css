@@ -5,21 +5,22 @@
   padding: 0;
 }
 :root{
-  --color-bg: #0e0b0b;
-  --color-bg1: #000000de;
-  --color-text: #276bf3;
+  --color-bg: #08080f;
+  --color-bg1: #08080fd0;
+  --color-text: #246dff;
   --color-text-light: #6796f3;
-  --color-primary: #f7e1d6;
-  --color-light:rgb(98, 224, 218);
+  --color-primary: #f0f0f0;
+  --color-primary2: #b9b9b9;
+  --color-light:rgb(52, 105, 250);
+  --color-ligt:rgb(98, 224, 218);
   --color-button-color: rgb(218, 74, 55);
   --color-button-hover:rgb(245, 42, 35);
   --border: 1px solid rgba(255, 255, 255, 0.384);
 }
-body {
-  background-color: #000000;
+body { 
   background-image: url('./assets/texture.png');
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  background-color: black;
+  background-color: var(--color-bg);
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
@@ -38,7 +39,25 @@ body {
 .slash{
   height: 2px;
   width: 10px;
-  background-color: var(--color-text);
+  background-color: var(--color-text-light);
   transform: rotate(-40deg);
 
+}
+
+.button{
+  font-size: 25px;
+  padding: 8px 16px;
+  border:none;
+  border-radius: 10px;
+  margin: 20px auto;
+  background-color: var(--color-text);
+  color:white  ;
+  border: 1px transparent solid;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover{
+  border: 1px var(--color-text) solid;
+  background-color: unset;
 }

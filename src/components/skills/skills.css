@@ -8,13 +8,26 @@
 }
 .component__skills h1{
     text-align: center;
-    color: var(--color-light);
+    color: var(--color-primary);
     font-size: 30px;
 }
 .component__skills-content{
     display: flex;
     flex-direction: row;
+    /* margin: auto 20px; */
+    background-color: rgba(255, 255, 255, 0.050);
+    padding: 30px;
+}
+.component__skills-content-swiper{
+    
+}
+.swiperSlide{
     margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.techIcon{
+    width: 50px;
 }
 .component__skills-frontend{
     background-color: rgba(255, 255, 255, 0.050);

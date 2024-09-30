@@ -14,7 +14,7 @@
     flex-direction: row;
 }
 .component__nav-websitename h1{
-    color: var(--color-text);
+    color: var(--color-primary);
     font-size: 30px;
 }
 .component__nav-websitename img{
@@ -30,7 +30,7 @@
     margin-right: 5%;
 }
 .component__nav-navbar p{
-    color: var(--color-light);
+    color: var(--color-primary);
     font-size: 18px;
     transition: 0.5s;
 }

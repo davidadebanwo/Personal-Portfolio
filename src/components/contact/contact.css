@@ -2,19 +2,23 @@
     padding-top: 50px;
 }
 .component__contact h1{
-    color: var(--color-light);
+    color: var(--color-primary);
     font-size: 30px;
     text-align: center;
 }
 form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    padding: 20px;
+    /* gap: 20px; */
+    /* background-color: rgba(255, 255, 255, 0.050); */
+    /* margin: auto 20%; */
+    /* border-radius: 20px; */
 }
 form input{
     height: 35px;
     width: 50%;
-    margin: auto;
+    margin: 0 auto 20px;
     border-radius: 10px;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.384);
@@ -38,22 +42,7 @@ form textarea{
     padding: 5px 0 0 10px; 
     font-family: 'Poppins', sans-serif;
 }
-form button{
-    width: 100px;
-    font-size: 25px;
-    margin: auto;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    background-color: var(--color-button-color);
-    color:white  ;
-    cursor: pointer;
-    transition: 0.5s;
-}
 
-form button:hover{
-    background-color: var(--color-button-hover);
-}
 
 @media screen and (max-width:800px) {
     .component__contact h1{

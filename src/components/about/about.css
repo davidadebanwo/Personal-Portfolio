@@ -9,7 +9,7 @@
     
 }
 .component__about-title h1{
-    color: var(--color-light);
+    color: var(--color-primary);
     font-size: 30px;
     text-align: center;
 }
@@ -53,10 +53,10 @@
 .component__about-experience{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     /* flex-wrap: wrap; */
     /* justify-content: center; */
-    /* gap: 5%; */
+    gap: 10%;
     margin-bottom: 5%;
     padding: 0 20px 0 20px;
 }
@@ -70,73 +70,49 @@
     border-radius: 10px;
     box-shadow: 0px 5px 5px rgb(105, 100, 100);
     background-color: rgba(255, 255, 255, 0);
+    border: 1px solid transparent;
     transition: 0.3s;
     cursor: default;
 }
 .component__about-experience-each:hover{
     background-color: rgba(255, 255, 255, 0.050);
     box-shadow: 0px 0px 0px rgb(105, 100, 100);
+    border: 1px solid var(--color-text);
 }
 .component__about-experience-each h2{
-    color: var(--color-light);
+    color: var(--color-text);
     font-size: 25px;
 }
 .component__about-experience-each h4{
-    color: var(--color-primary);
+    color: var(--color-primary2);
     font-size: 16px;
 }
 .component__about-content-paragraph{
     margin: auto;
-    
-}
-.component__about-content-paragraph p{
-    color: var(--color-primary);
-    font-size: 16px;
     /* text-align: right; */
     justify-content: space-evenly;
     background-color: rgba(255, 255, 255, 0.050);
+    border: 1px solid transparent;
     padding: 20px;
     border-radius: 20px;
+    transition: 0.5s;
+}
+.component__about-content-paragraph:hover{
+    border: var(--border);
+    justify-content: space-evenly;
+    background-color: unset;
+    transition: 0.5s;
+}
+.component__about-content-paragraph p{
+    color: var(--color-primary2);
+    font-size: 16px;
+    
 }
 .component__about-content-contact{
     display: flex;
     justify-content: center;
 }
-.component__about-content-contact button{
-    font-size: 25px;
-    padding: 10px 5px;
-    border:none;
-    border-radius: 10px;
-    margin-top: 20px;
-    background-color: var(--color-button-color);
-    color:white  ;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.component__about-content-contact button:hover{
-    background-color: var(--color-button-hover);
-}
 
-
-
-.slashline{
-    display: flex;
-    gap: 2px;
-    justify-content: center;
-    
-}
-.line{
-    height: 2px;
-    width: 50px;
-    background-color: white;
-}
-.slash{
-    height: 2px;
-    width: 10px;
-    background-color: white;
-    transform: rotate(-40deg);
-
-}
 
 
 

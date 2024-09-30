@@ -2,7 +2,7 @@
     padding-top: 50px;
 }
 .component__portfolio h1{
-    color:var(--color-light);
+    color:var(--color-primary);
     text-align: center;
     font-size: 30px;
     
@@ -34,10 +34,12 @@
     background-color: rgba(255, 255, 255, 0.050);
     width: 80%;
     display: flex;
-    margin: auto;
+    margin: 0 auto;
+    gap: 10px;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 20px;
+    border: 1px solid transparent;
     border-radius: 20px;
     margin-bottom: 20px;
     transition: 0.5s;
@@ -48,9 +50,25 @@
     transition: 0.5s;
 }
 .component__portfolio-content-webdev-each img{
-    width: 90%;
+    width: 100%;
     border-radius: 20px;
     margin: auto;
+}
+.component__portfolio-content-webdev-each-technologies{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    margin: ;
+}
+.tech-icon{
+    color: var(--color-light);
+    font-size: 30px;
+}
+.component__portfolio-content-webdev-each-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .component__portfolio-content-webdev-each h3{
     color: white;
@@ -61,11 +79,12 @@
     margin: auto;
 }
 .component__portfolio-content-webdev-each p{
-    color: var(--color-primary);
+    color: var(--color-primary2);
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     margin: auto;
-    padding: 5px;
+    /* padding: 5px; */
+
     /* height:140px; */
 }
 .component__portfolio-content-webdev-each button{
@@ -75,12 +94,12 @@
     border: none;
     /* width:200px; */
     margin: auto;
-    background-color: var(--color-button-color);
+    background-color: var(--color-text);
     color:white ;
     transition: 0.5s;
 }
 .component__portfolio-content-webdev-each button:hover{
-    background-color: var(--color-button-hover);
+    background-color: var(--color-text-light);
 }
 
 .component__portfolio-content-illustration-all{

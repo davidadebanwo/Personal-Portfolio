@@ -1,17 +1,23 @@
 .component__footer{
-    background-color: black;
-    margin-top: 50px;
-    padding: 20px 10% 0 10% ;
-    
+    background-color: var(--color-bg1);
+    /* height: 150px; */
+    margin-top: 100px;
+    padding: 100px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid var(--color-primary);
+    /* width: 100%; */
 }
 .component__footer-content{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border-left: 1px solid rgba(255, 255, 255, 0.384);
-    border-right: 1px solid rgba(255, 255, 255, 0.384);
-    width: 98%;
-    margin: auto;
+    justify-content: space-between;
+    flex-direction: row;
+    /* border-left: 1px solid rgba(255, 255, 255, 0.384); */
+    /* border-right: 1px solid rgba(255, 255, 255, 0.384); */
+    /* width: 98%; */
+    /* margin: auto; */
 }
 .component__footer-links{
     display: flex;
@@ -27,9 +33,8 @@
     color: var(--color-text-light);
 }
 .component__footer-socials{
-    font-size: 30px;
+    font-size: 20px;
     color: var(--color-light);
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,8 +47,12 @@
     cursor: pointer;
 }
 .component__footer-social-each:hover{
-    color: var(--color-text-light);
+    color: var(--color-primary2);
 }
+.component__footer-copyright{
+    color: var(--color-primary2);
+}
+
 
 @media screen and (max-width: 800px) {
     .component__footer-links p{
