@@ -157,9 +157,9 @@
     .component__about-content-paragraph p{
         font-size: 14px;
     }
-    .component__about-content-contact button{
+    /* .component__about-content-contact button{
         font-size: 20px;
-    }
+    } */
 }
 
 @media screen and (max-width:450px) {
