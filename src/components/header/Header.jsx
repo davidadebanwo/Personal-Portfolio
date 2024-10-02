@@ -22,10 +22,10 @@ const Header = () => {
           {/* <p>I am a web developer and illustrator with a passion for creating high-quality and visually appealing websites.</p> */}
         </div>
         <div className="component__header-intro-socials">
-          <a href='mailto:me@davidadebanwo.com' target='_blank'><BsEnvelope className='components__header-intro-social-each'/></a>
-          <a href='https://www.linkedin.com/in/david-adebanwo'target='_blank'><BsLinkedin className='components__header-intro-social-each'/></a>
-          <a href='https://twitter.com/dave_O_A' target='_blank'><BsTwitter className='components__header-intro-social-each'/></a>
-          <a href='https://github.com/davidadebanwo' target='_blank'><BsGithub className='components__header-intro-social-each'/></a>
+          <a href='mailto:me@davidadebanwo.com' target='_blank' rel="noreferrer"><BsEnvelope className='components__header-intro-social-each'/></a>
+          <a href='https://www.linkedin.com/in/david-adebanwo'target='_blank' rel="noreferrer"><BsLinkedin className='components__header-intro-social-each'/></a>
+          <a href='https://twitter.com/dave_O_A' target='_blank' rel="noreferrer"><BsTwitter className='components__header-intro-social-each'/></a>
+          <a href='https://github.com/davidadebanwo' target='_blank' rel="noreferrer"><BsGithub className='components__header-intro-social-each'/></a>
 
         </div>
       </div>

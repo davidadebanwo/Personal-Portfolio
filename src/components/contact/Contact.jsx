@@ -65,7 +65,7 @@ const Contact = () => {
         <textarea name="message" cols="30" rows="10" required placeholder='Message'></textarea>
         <button className='button' type='submit'>
           {loading ? (
-            <div className="loading-spinner"></div> // Loading spinner when submitting
+            <div className="loading-spinner" width="100px"></div> // Loading spinner when submitting
           ) : (
             'Submit' // Default text when not loading
           )}
