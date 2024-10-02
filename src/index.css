@@ -63,7 +63,17 @@ body {
 }
 
 @media screen and (max-width:800px) {
+  .slashline{
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
   .component__about-content-contact button{
       font-size: 20px;
   }
+}
+
+@media screen and (max-width:450px) {
+
 }

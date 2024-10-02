@@ -114,9 +114,8 @@ const Portfolio = () => {
         </div>
         <div className="component__portfolio-content">
             <div className="component__portfolio-content-webdev">
-{/*                 
-                <h2>Web Development Projects</h2> */}
-                <FaHtml5 />                
+                 
+               
                 <div className="component__portfolio-content-webdev-all">
                 {
                 data.map(({image, websitename, websiteicons,websitedescription,websitelink},index)=>{
