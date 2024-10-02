@@ -49,6 +49,11 @@ const Skills = () => {
             disableOnInteraction: false,
           }}
           speed={2000} // Set speed for smoother transitions
+          breakpoints={{
+            450: {
+              slidesPerView: 4 // Mobile (smallest screens)
+            }
+          }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
           className="component__skills-content-swiper"

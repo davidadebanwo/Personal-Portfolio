@@ -61,7 +61,7 @@
     
 }
 .component__nav-verticalnav p{
-    color: var(--color-light);
+    color: var(--color-primary);
     border-bottom:var(--border);
     font-size: 18px;
     padding: 20px ;

@@ -1,8 +1,8 @@
 .component__footer{
     background-color: var(--color-bg1);
     /* height: 150px; */
-    margin-top: 100px;
-    padding: 100px 20px 20px;
+    margin-top: 50px;
+    padding: 80px 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -55,12 +55,19 @@
 
 
 @media screen and (max-width: 800px) {
+    .component__footer-content{
+        flex-direction: column;
+    }
     .component__footer-links p{
         font-size: 16px;
     }
     .component__footer-socials{
         font-size: 25px;
         gap: 20px;
+    }
+    .component__footer-copyright{
+        display: flex;
+        justify-content: center;
     }
 }
 
