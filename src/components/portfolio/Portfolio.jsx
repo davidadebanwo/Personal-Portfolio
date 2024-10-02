@@ -31,7 +31,7 @@ const Portfolio = () => {
                 IoLogoJavascript,
                 FaNodeJs
             ],
-            websitedescription: "In this project, I worked on both the frontend and the backend. I created the page showing the course listings using express-handlers, CSS and javaScript. I created the admin dashboard to facilitate the sending of admission letters to students applying. I used node.js, express, express-handlers to create this system. ",
+            websitedescription: "Developed both the frontend and backend, creating the university info and course listings pages using Express Handlebars, CSS, and JavaScript. Built an admin dashboard with Node.js, Express, and MySQL to manage applicant data, store student information, and automate the sending of admission letters to accepted applicants.",
             websitelink: 'https://estamuni.net'
         },
         {
@@ -44,7 +44,7 @@ const Portfolio = () => {
                 IoLogoJavascript,
                 FaReact
             ],
-            websitedescription: "In this project, I worked on both the frontend and the backend. I created the page showing the course listings using express-handlers, CSS and javaScript. I",
+            websitedescription: "Built the Tremolo Guitars website using React, HTML, CSS, and JavaScript. The site showcases a range of guitars for sale, with a responsive design and smooth user interface to enhance the browsing experience.",
             websitelink: 'https://tremologuitars.netlify.app'
         },
         // {
@@ -70,7 +70,7 @@ const Portfolio = () => {
                 IoLogoJavascript,
                 FaHtml5
             ],
-            websitedescription: "In this project, I worked on both the frontend and the backend. I created the page showing the course listings using express-handlers, CSS and javaScript. I created the admin dashboard to",
+            websitedescription: "Created Kool Quiz, a fun and engaging quiz website using HTML, CSS, and JavaScript. The site features a user-friendly interface and interactive elements that enhance the quiz-taking experience.",
             websitelink: 'https://koolquizgame.netlify.app/'
         },
         {
@@ -82,7 +82,7 @@ const Portfolio = () => {
                 FaCss3Alt,
                 IoLogoJavascript
             ],
-            websitedescription: "In this project, I worked on both the frontend and the backend. I created the page showing the course listings using express-handlers, ",
+            websitedescription: "Designed and developed the MuscleMart website from scratch using HTML, CSS, and JavaScript. Focused on creating a visually appealing and user-friendly interface with responsive design for an optimal shopping experience.",
             websitelink: 'https://musclemart.netlify.app/'
         }
     ]
@@ -140,9 +140,9 @@ const Portfolio = () => {
                 }
                 )}
                 </div>
-                <div style={{color:'white', display:'flex', justifyContent:'center'}} className='component__portfolio-content-webdev-see-more'>
+                {/* <div style={{color:'white', display:'flex', justifyContent:'center'}} className='component__portfolio-content-webdev-see-more'>
                     <p style={{fontSize:'20px', color:'#ffffffc1'}}>View more projects...</p>
-                </div>
+                </div> */}
             </div>
 
 

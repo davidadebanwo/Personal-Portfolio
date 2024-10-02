@@ -13,13 +13,36 @@ const Contact = () => {
 
   const form=useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_r4nw599', 'template_72q0whp', form.current, 'xJ1F3n_a1y_-cvCWN')
-      
-    e.target.reset()
-  };
+    const formData = {
+        firstname: e.target.firstname.value,
+        lastname: e.target.lastname.value,
+        email: e.target.email.value,
+        message: e.target.message.value
+    };
+
+    try {
+        const response = await fetch('https://portfolio-api-liard.vercel.app/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+        if (response.ok) {
+            alert('Message sent successfully');
+        } else {
+            alert('Error sending message');
+        }
+    } catch (error) {
+        console.error(error);
+        alert('Failed to send message');
+    }
+
+    e.target.reset();
+};
 
 
   return (
