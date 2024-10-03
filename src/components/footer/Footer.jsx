@@ -1,17 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './footer.css'
-
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
-import logo from '../../assets/D logo.png'
 import {BsLinkedin, BsTwitter, BsEnvelope, BsGithub} from 'react-icons/bs'
 
 const Footer = () => {
-
-  // useEffect(()=>{
-  //   AOS.init({duration:1000})
-  // },[])
 
   return (
     <div className="component__footer" >
