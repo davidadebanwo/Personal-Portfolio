@@ -3,12 +3,8 @@ import AOS from 'aos'
 import './portfolio.css'
 import estamuni from '../../assets/estamuni.jpg'
 import tremolo from '../../assets/tremolo guitars.png'
-import gpt3 from '../../assets/gpt3.png'
 import koolQuiz from '../../assets/kool-quiz.png'
 import muscleMart from '../../assets/muscle-mart.png'
-import digital1 from '../../assets/digital illustration1.png'
-import digital2 from '../../assets/digital illustration2.png'
-import digital3 from '../../assets/digital illustration3.png'
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
@@ -35,7 +31,7 @@ const Portfolio = () => {
             websitelink: 'https://estamuni.net'
         },
         {
-            id:1,
+            id:2,
             image:tremolo,
             websitename:'Tremolo guitars',
             websiteicons: [
@@ -47,19 +43,6 @@ const Portfolio = () => {
             websitedescription: "Built the Tremolo Guitars website using React, HTML, CSS, and JavaScript. The site showcases a range of guitars for sale, with a responsive design and smooth user interface to enhance the browsing experience.",
             websitelink: 'https://tremologuitars.netlify.app'
         },
-        // {
-        //     id:2,
-        //     image:gpt3,
-        //     websitename:'GPT-3 Website',
-        //     websiteicons: [
-        //         FaHtml5,
-        //         FaCss3Alt,
-        //         IoLogoJavascript,
-        //         FaReact
-        //     ],
-        //     websitedescription: "HTML, CSS, JavaScript, React",
-        //     websitelink: 'https://openaigpt3site.netlify.app'
-        // },
         {
             id:3,
             image:koolQuiz,
@@ -87,19 +70,7 @@ const Portfolio = () => {
         }
     ]
 
-    const illustrationdata=[
-        {
-            id:1,
-            image:digital1
-        },
-        {   id:2,
-            image:digital2
-        },
-        {   id:3,
-            image:digital3
-        }
-    ]
-
+    
   return (
     <div className='component__portfolio' id='portfolio'>
         <h1>Portfolio</h1>
@@ -113,8 +84,7 @@ const Portfolio = () => {
         <div className="line"></div>
         </div>
         <div className="component__portfolio-content">
-            <div className="component__portfolio-content-webdev">
-                 
+            <div className="component__portfolio-content-webdev">                 
                
                 <div className="component__portfolio-content-webdev-all">
                 {
@@ -130,7 +100,7 @@ const Portfolio = () => {
                                 ))}  
                             </div>
                             <div className="component__portfolio-content-webdev-each-content">
-                                <h3><a href={websitelink} target='blank'>{websitename}</a></h3>
+                                <h3><a href={websitelink} target='blank' rel="noreferrer">{websitename}</a></h3>
                                 <p>{websitedescription}</p>
                             </div>
                             {/* <button><a href={websitelink} target='_blank'>Check Out</a></button> */}
