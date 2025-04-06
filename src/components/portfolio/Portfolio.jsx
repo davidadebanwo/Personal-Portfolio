@@ -4,7 +4,6 @@ import './portfolio.css'
 import programmify from '../../assets/programmify-academy.png'
 import estamuni from '../../assets/estamuni.jpg'
 import shawarma from '../../assets/shawarma-house.png'
-import tremolo from '../../assets/tremolo guitars.png'
 import koolQuiz from '../../assets/kool-quiz.png'
 import muscleMart from '../../assets/muscle-mart.png'
 import { FaHtml5 } from "react-icons/fa";
