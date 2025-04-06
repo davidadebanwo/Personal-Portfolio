@@ -18,7 +18,7 @@ const Header = () => {
         <div className="component__header-intro-about">
           <h2><span>Hello</span>, My name is </h2>
           <h3>David Oluwasegun Adebanwo</h3>
-          <p>I craft clean, efficient websites and applications, from intuitive frontends to robust backends. With over 2 years of experience, I’m dedicated to building digital solutions that work seamlessly. Take a look at my work, and let's bring your vision to life.</p>
+          <p>I craft clean, efficient websites and applications, from intuitive frontends to robust backends. With over 3 years of experience, I’m dedicated to building digital solutions that work seamlessly. Take a look at my work, and let's bring your vision to life.</p>
           {/* <p>I am a web developer and illustrator with a passion for creating high-quality and visually appealing websites.</p> */}
         </div>
         <div className="component__header-intro-socials">
