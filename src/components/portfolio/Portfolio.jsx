@@ -1,7 +1,9 @@
 import React, {useEffect} from 'react'
 import AOS from 'aos'
 import './portfolio.css'
+import programmify from '../../assets/programmify-academy.png'
 import estamuni from '../../assets/estamuni.jpg'
+import shawarma from '../../assets/shawarma-house.png'
 import tremolo from '../../assets/tremolo guitars.png'
 import koolQuiz from '../../assets/kool-quiz.png'
 import muscleMart from '../../assets/muscle-mart.png'
@@ -19,6 +21,19 @@ const Portfolio = () => {
     const data =[
         {
             id:1,
+            image:programmify,
+            websitename:'Programmify Academy',
+            websiteicons: [
+                FaHtml5,
+                FaCss3Alt,
+                IoLogoJavascript,
+                FaNodeJs
+            ],
+            websitedescription: "Successfully led the development of programmify Academy, an educational platform that empowers students to master technical skills. I spearheaded the end-to-end development process, architecting a robust Node.js backend infrastructure while guiding the frontend team in creating an intuitive, responsive user interface.",
+            websitelink: 'https://academy.programmify.org'
+        },
+        {
+            id:2,
             image:estamuni,
             websitename:'ESTAM University',
             websiteicons: [
@@ -31,31 +46,31 @@ const Portfolio = () => {
             websitelink: 'https://estamuni.net'
         },
         {
-            id:2,
-            image:tremolo,
-            websitename:'Tremolo guitars',
+            id:3,
+            image:shawarma,
+            websitename:'Shawarma House',
             websiteicons: [
                 FaHtml5,
                 FaCss3Alt,
                 IoLogoJavascript,
                 FaReact
             ],
-            websitedescription: "Built the Tremolo Guitars website using React, HTML, CSS, and JavaScript. The site showcases a range of guitars for sale, with a responsive design and smooth user interface to enhance the browsing experience.",
-            websitelink: 'https://tremologuitars.netlify.app'
+            websitedescription: "Created a fast food restaurant site with responsive design and exceptional visual aesthetic, delivering an intuitive and engaging user experience across all devices.",
+            websitelink: 'https://shawarmahouse.netlify.app'
         },
-        {
-            id:3,
-            image:koolQuiz,
-            websitename:'Kool Quiz',
-            websiteicons: [
-                FaHtml5,
-                FaCss3Alt,
-                IoLogoJavascript,
-                FaHtml5
-            ],
-            websitedescription: "Created Kool Quiz, a fun and engaging quiz website using HTML, CSS, and JavaScript. The site features a user-friendly interface and interactive elements that enhance the quiz-taking experience.",
-            websitelink: 'https://koolquizgame.netlify.app/'
-        },
+        // {
+        //     id:3,
+        //     image:tremolo,
+        //     websitename:'Tremolo guitars',
+        //     websiteicons: [
+        //         FaHtml5,
+        //         FaCss3Alt,
+        //         IoLogoJavascript,
+        //         FaReact
+        //     ],
+        //     websitedescription: "Built the Tremolo Guitars website using React, HTML, CSS, and JavaScript. The site showcases a range of guitars for sale, with a responsive design and smooth user interface to enhance the browsing experience.",
+        //     websitelink: 'https://tremologuitars.netlify.app'
+        // },
         {
             id:4,
             image:muscleMart,
@@ -67,6 +82,19 @@ const Portfolio = () => {
             ],
             websitedescription: "Designed and developed the MuscleMart website from scratch using HTML, CSS, and JavaScript. Focused on creating a visually appealing and user-friendly interface with responsive design for an optimal shopping experience.",
             websitelink: 'https://musclemart.netlify.app/'
+        },
+        {
+            id:5,
+            image:koolQuiz,
+            websitename:'Kool Quiz',
+            websiteicons: [
+                FaHtml5,
+                FaCss3Alt,
+                IoLogoJavascript,
+                FaHtml5
+            ],
+            websitedescription: "Created Kool Quiz, a fun and engaging quiz website using HTML, CSS, and JavaScript. The site features a user-friendly interface and interactive elements that enhance the quiz-taking experience.",
+            websitelink: 'https://koolquizgame.netlify.app/'
         }
     ]
 

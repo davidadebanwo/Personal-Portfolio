@@ -4,17 +4,33 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // AOS CSS for animation
 
 const Contact = () => {
-  const [loading, setLoading] = useState(false); // Manage loading state
+  const [loading, setLoading] = useState(false);
+  const [toast, setToast] = useState({ visible: false, message: '', type: '' });
   const form = useRef();
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
 
+  // Handle toast notification
+  useEffect(() => {
+    let timer;
+    if (toast.visible) {
+      timer = setTimeout(() => {
+        setToast({ ...toast, visible: false });
+      }, 3000);
+    }
+    return () => clearTimeout(timer);
+  }, [toast]);
+
+  const showToast = (message, type) => {
+    setToast({ visible: true, message, type });
+  };
+
   const sendEmail = async (e) => {
     e.preventDefault();
 
-    setLoading(true); // Set loading to true when submitting
+    setLoading(true);
 
     const formData = {
       firstname: e.target.firstname.value,
@@ -33,16 +49,16 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        alert('Message sent successfully');
+        showToast('Message sent successfully!', 'success');
       } else {
-        alert('Error sending message');
+        showToast('Error sending message', 'error');
       }
     } catch (error) {
       console.error(error);
-      alert('Failed to send message');
+      showToast('Failed to send message', 'error');
     }
 
-    setLoading(false); // Set loading to false when done
+    setLoading(false);
     e.target.reset();
   };
 
@@ -65,12 +81,39 @@ const Contact = () => {
         <textarea name="message" cols="30" rows="10" required placeholder='Message'></textarea>
         <button className='button' type='submit'>
           {loading ? (
-            <div className="loading-spinner" width="100px" ></div> // Loading spinner when submitting
+            <div className="loading-spinner"></div>
           ) : (
-            'Submit' // Default text when not loading
+            'Submit'
           )}
         </button>
       </form>
+
+      {/* Toast Notification */}
+      {toast.visible && (
+        <div className={`toast-notification ${toast.type} ${toast.visible ? 'show' : ''}`}>
+          <div className="toast-icon">
+            {toast.type === 'success' ? (
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            )}
+          </div>
+          <div className="toast-message">{toast.message}</div>
+          <button className="toast-close" onClick={() => setToast({ ...toast, visible: false })}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      )}
     </div>
   );
 }
